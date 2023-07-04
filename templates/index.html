@@ -1,0 +1,92 @@
+<html>
+
+<head>
+<!--<title> Home Page </title> -->
+
+<title> {{title}} </title>
+<style> 
+.main {
+    width: 1000px;
+    background-color: red;
+    color: white;
+    padding: 100px;
+    font-size: 30px;
+
+
+}
+
+
+</style>
+
+</head>
+<!-- <body>  <div class="main"> Welcome To My Python Web-Pages !!! </div> -->
+    
+   <!-- <body>  <div class="main"> {{bigdata}}  </div>--> 
+
+     <!-- <body>  <div class="main"> {{bigdata}} {{class}} </div>-->
+        
+
+        <!--for loop-->
+
+        {% for i in class %}
+        <!--<div> {{i}} </div>-->
+        <div>{{forloop.counter}} {{i}} </div> 
+
+        
+
+        <!--   <div>{{forloop.revcounter}} {{i}} </div> -->
+
+        <!-- <div>{{forloop.revcounter0}} {{i}} </div>  -->
+
+        
+        <!-- <div>{{forloop.last}} {{i}} </div>-->
+
+       <!-- <div>{{forloop.first}} {{i}} </div>  -->  
+
+       
+
+     </br>
+
+        <table border="1" cellpadding="10">
+          
+            <tr>
+                <th>Name</th>
+                <th>Phone</th>
+
+            </tr>
+
+            {% endfor %}
+
+        </br>
+
+{% for d in student_list %}
+            <tr>
+                <td> {{d.name}}</td>
+                <td>{{d.phone}} </td>
+            </tr>
+        
+            {% endfor %}
+        
+        </table>
+    {% if numbers > 0 %}
+    {% for k in numbers %}
+
+         {% if k > 20 %}
+         <div> {{k}} </div>
+            {% endif %}
+            {% endfor %}
+
+            {% else %}
+
+            No data found
+
+            {% endif %}
+
+
+   
+       
+</body>
+
+    </html>
+
+   
