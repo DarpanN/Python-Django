@@ -19,10 +19,10 @@ from myweb import views
 
 urlpatterns = [
     path('admin-web/', admin.site.urls),
-    path('', views.homePage),
-    path('fashion/',views.fashionPage),
-    path('electronic/',views.electronicPage),
-    path('jewellery/',views.jewelleryPage),
+    path('', views.homePage, name="home"),
+    path('fashion/',views.fashionPage,name="fashion"),
+    path('electronic/',views.electronicPage, name="electronic"),
+    path('jewellery/',views.jewelleryPage, name="jewellery"),
     
 
    
